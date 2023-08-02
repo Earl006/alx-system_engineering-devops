@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -1pF | grep -v /$ | sort -d | tr '\n' ',' && ls -dpF .*/ | tr '\n' ','
