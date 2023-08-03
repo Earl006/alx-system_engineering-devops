@@ -1,2 +1,5 @@
-#!/bin/bash
-su -c 'chown betty hello'
+#!/bin/sh
+if [ "$(stat -c '%U' hello)" = "guillaume" ]
+then
+    chown betty hello
+fi
