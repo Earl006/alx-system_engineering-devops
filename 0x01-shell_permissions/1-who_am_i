@@ -1,2 +1,2 @@
-#!/bin/sh
-echo "$(id -un)"
+#!/bin/bash
+echo "$(id -un)
