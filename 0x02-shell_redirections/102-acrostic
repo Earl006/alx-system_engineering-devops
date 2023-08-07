@@ -1,2 +1,2 @@
 #!/bin/bash
-sed -n 's/^\(.\).*/\1/p' | tr -d '\n'; echo
+while read -r line; do printf "%s" "${line:0:1}"; done; echo
