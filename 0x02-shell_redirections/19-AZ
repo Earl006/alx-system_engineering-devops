@@ -1,2 +1,2 @@
 #!/bin/bash
-cat input.txt | tr 'Ac' 'Ze'
+echo 'input' | tr 'Ac' 'Ze'
