@@ -1,2 +1,0 @@
-#!/bin/bash
-find . -type d -empty -o -type f -empty | sed -e 's|^\./||'
