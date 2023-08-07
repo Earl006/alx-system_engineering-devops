@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f \( -name "*.gif" -o -name ".*.gif" \) -print0 | xargs -0 -n1 sed -e 's/\.gif$//' -e 's,^\./,,'
+find . -type f \( -name "*.gif" -o -name ".*.gif" \) -print0 | while IFS= read -r -d '' file; do printf '%s\n' "${file%.*}" | sed 's,^\./,,'; done | sort -f
