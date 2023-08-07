@@ -1,2 +1,2 @@
 #!/bin/bash
-tr -d 'cC'
+cat input.txt | tr 'Ac' 'Ze'
