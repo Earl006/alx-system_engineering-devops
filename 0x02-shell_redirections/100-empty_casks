@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -empty -type f -o -type d -printf '%f\n'
+find . -type d -empty -o -type f -empty | sed -e 's|^\./||'
