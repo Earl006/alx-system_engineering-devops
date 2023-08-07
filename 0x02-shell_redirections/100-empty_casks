@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type d -empty -exec sh -c 'printf "%s\n" "${0##*/}"' {} \; -o -type f -empty -exec sh -c 'printf "%s\n" "${0##*/}"' {} \;
+find . -empty -type f -o -type d -printf '%f\n'
