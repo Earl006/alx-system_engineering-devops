@@ -1,2 +1,5 @@
 #!/bin/bash
-while read -r line; do printf "%s" "${line:0:1}"; done; echo
+while read -r line
+do printf "%s" "${line:0:1}"
+done
+echo
