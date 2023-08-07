@@ -1,2 +1,2 @@
 #!/bin/bash
-read -p "Enter a string: " input; modified="${input//A/Z}"; echo "${modified//c/e}"
+echo 'input' | tr 'Ac' 'Ze'
