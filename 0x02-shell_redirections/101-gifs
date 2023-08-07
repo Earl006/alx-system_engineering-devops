@@ -1,3 +1,2 @@
 #!/bin/bash
 find . -type f \( -name "*.gif" -o -name ".*.gif" \) -print | sort -f | sed 's/\.gif$//'
-
