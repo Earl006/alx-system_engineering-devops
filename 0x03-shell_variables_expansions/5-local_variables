@@ -1,6 +1,2 @@
 #!/bin/bash
-echo "Local Variables:"
-declare -p | grep -E '^[[:blank:]]*declare -[aAilrtx]* [[:alnum:]_]+='
-echo "Environment Variables:"
-env
-echo "Functions:"
+set
